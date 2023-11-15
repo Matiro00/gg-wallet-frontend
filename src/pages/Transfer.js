@@ -73,9 +73,8 @@ const Transfer = () => {
             {transferResponse ? 
               <SuccessMessage>{transferResponse}</SuccessMessage>
             : null}
-            {transferErrors ? transferErrors.map((error, i) => (
-              <ErrorMessage key={i}>{error}</ErrorMessage>
-            )) : null}
+            {transferErrors ? 
+              <ErrorMessage>{transferErrors}</ErrorMessage> : null}
             <ButtonContainer>
               <NormalSumbitStyled type="submit">
                 Transferir

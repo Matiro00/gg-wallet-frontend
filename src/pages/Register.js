@@ -100,7 +100,7 @@ const Register = () => {
                 onBlur={handleBlur}
                 value={values.email}
               />
-              {errors.email && touched.email && errors.email}
+              {errors.email && touched.email && <ErrorMessage>{errors.email}</ErrorMessage>}
               <StyledTextInput
                 placeholder="Contraseña"
                 type="password"
